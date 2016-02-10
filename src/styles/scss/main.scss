@@ -1,0 +1,69 @@
+$blue: #0496FF;
+$blueDarken: #006BA6;
+$red: #D81159;
+$redDarken: #8F2D56;
+$yellow: #FFBC42;
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+@mixin icon-style {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  background-color: $blue;
+
+  &:hover {
+    background-color: $red;
+    cursor: pointer;
+    animation: rotate 1s ease;
+  }
+}
+
+.compass {
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+  background-image: url(../../images/blankCompass.svg);
+  background-size: cover;
+  margin-top: 37vh;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+}
+
+.me {
+  @include icon-style;
+  top: -3.3rem;
+  left: 3.9rem;
+}
+.dev {
+  @include icon-style;
+  top: 4rem;
+  left: 11rem;
+}
+.connect {
+  @include icon-style;
+  top: 11rem;
+  left: 3.9rem;
+}
+.blog {
+  @include icon-style;
+  top: 4rem;
+  left: -3rem;
+}
+

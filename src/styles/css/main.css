@@ -1,1 +1,84 @@
-/* add custom styles */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.compass {
+  width: 10rem;
+  height: 10rem;
+  margin: auto;
+  background-image: url(../../images/blankCompass.svg);
+  background-size: cover;
+  margin-top: 37vh;
+  position: relative; }
+  .compass img {
+    width: 100%; }
+
+.me {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  background-color: #0496FF;
+  top: -3.3rem;
+  left: 3.9rem; }
+  .me:hover {
+    background-color: #D81159;
+    cursor: pointer;
+    animation: rotate 1s ease; }
+
+.dev {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  background-color: #0496FF;
+  top: 4rem;
+  left: 11rem; }
+  .dev:hover {
+    background-color: #D81159;
+    cursor: pointer;
+    animation: rotate 1s ease; }
+
+.connect {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  background-color: #0496FF;
+  top: 11rem;
+  left: 3.9rem; }
+  .connect:hover {
+    background-color: #D81159;
+    cursor: pointer;
+    animation: rotate 1s ease; }
+
+.blog {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  margin: auto;
+  position: absolute;
+  background-color: #0496FF;
+  top: 4rem;
+  left: -3rem; }
+  .blog:hover {
+    background-color: #D81159;
+    cursor: pointer;
+    animation: rotate 1s ease; }
